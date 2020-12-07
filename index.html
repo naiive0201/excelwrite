@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>택배 엑셀 작성 앱</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <style>
+      table {text-align: left;}
+    </style>
+  </head>
+  <body style="background: white;">
+    <header>
+      <h1></h1>
+    </header>
+    <!-- <nav></nav> -->
+    <main>
+      <!-- <aside></aside> -->
+      <section>
+        <article>
+          <form action="">
+            <table>
+              <thead>
+                <tr>
+                  <th>항목</th>
+                  <th>입력</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>이름</td>
+                  <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                  <td>번호</td>
+                  <td><input type="text" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                  <td>주소</td>
+                  <td><input type="text" name="address" id="address"></td>
+                </tr>
+                <tr>
+                  <td>박스</td>
+                  <td>
+                    <select name="boxes" id="boxes">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>송장</td>
+                  <td>
+                    <select name="tags" id="tags">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>메모</td>
+                  <td><textarea name="memo" id="memo" cols="30" rows="10"></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="button" value="추가" name="add" id="add">
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Version Info </br>
+        We are using node <script>document.write(process.versions.node)</script> <br/>
+        Chrome <script>document.write(process.versions.chrome)</script> <br/>
+        and Electron <script>document.write(process.versions.electron)</script>
+      </p>
+    </footer>
+  </body>
+</html>
